@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import './App.css';
 import AddItem from '../src/components/AddItem';
-
+import SelectData from '../src/components/SelectData';
 
 
 
@@ -13,10 +13,9 @@ const handleItem = () => {
     setaddingItem(true);
 };
 
-
- 
   return (
     <div className="App">
+      <SelectData />
          { addingItem ?  <AddItem /> : ''}
 
    <div className="primary-buttons">
