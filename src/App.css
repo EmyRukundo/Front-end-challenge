@@ -1,38 +1,68 @@
 .App {
+  text-align: left;
+}
+.primary-buttons{
+  border: none;
+  margin-left: 15px;
+  margin-top: 30px;
+  display: inline-block;
+}
+.add-group{
+  background-color: #2185D0;
+  color: #FFFFFF;
+    min-height: 3em;
+    vertical-align: baseline;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    margin: 0em 0.25em 0em 0em;
+    padding: 0.78571429em 1.5em 0.78571429em;
+    font-weight: bold;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    border-radius: 0.28571429rem;
+    cursor: pointer;
+}
+.show-data{
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  vertical-align: baseline;
+  background: #E0E1E2 none;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin: 0em 0.25em 0em 0em;
+  padding: 0.78571429em 1.5em 0.78571429em;
+  font-weight: bold;
+  line-height: 1em;
+  font-style: normal;
   text-align: center;
+  border-radius: 0.28571429rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add-item-container{
+  margin: 0;
+  padding: 0;
 }
+.button-area{
+  margin: 30px 10px 0 10px;
+  border: 2px;
+  padding: 14px;
+  border-radius: 0.28571429rem;
+  border: 1px solid rgba(34, 36, 38, 0.15);
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-item{
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  vertical-align: baseline;
+  background: #E0E1E2 none;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin: 0em 0.25em 0em 0em;
+  padding: 0.78571429em 1.5em 0.78571429em;
+  font-weight: bold;
+  line-height: 1em;
+  font-style: normal;
+  text-align: center;
+  border-radius: 0.28571429rem;
 }
