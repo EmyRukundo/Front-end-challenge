@@ -1,27 +1,29 @@
-import React, { useState} from 'react';
-import './App.css';
-import AddItem from '../src/components/AddItem';
-import SelectData from '../src/components/SelectData';
-
-
+import React, { useState } from "react";
+import "./App.css";
+import AddItem from "../src/components/AddItem";
 
 function App() {
-const [addingItem, setaddingItem] = useState(false);
+  const [addingItem, setaddingItem] = useState(0);
 
-
-const handleItem = () => {
-    setaddingItem(true);
-};
+  const handleItem = () => {
+    const newLenght = addingItem + 1;
+    setaddingItem(newLenght);
+  };
 
   return (
     <div className="App">
-      <SelectData />
-         { addingItem ?  <AddItem /> : ''}
+      {Array(addingItem)
+        .fill("*")
+        .map(index => {
+          return <AddItem key={index} />;
+        })}
 
-   <div className="primary-buttons">
-      <button className='add-group' onClick={handleItem}>Add group</button>
-      <button className="show-data">Show data</button>
-   </div>
+      <div className="primary-buttons">
+        <button className="add-group" onClick={handleItem}>
+          Add group
+        </button>
+        <button className="show-data">Show data</button>
+      </div>
     </div>
   );
 }

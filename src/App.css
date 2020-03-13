@@ -45,7 +45,7 @@
 .button-area{
   margin: 30px 10px 0 10px;
   border: 2px;
-  padding: 14px;
+  padding:  14px 14px 14px 14px;
   border-radius: 0.28571429rem;
   border: 1px solid rgba(34, 36, 38, 0.15);
 
@@ -66,3 +66,8 @@
   text-align: center;
   border-radius: 0.28571429rem;
 }
+.item-container{
+  padding: 10px 0 10px 0;
+  margin-right: 1190px !important;
+}
+
