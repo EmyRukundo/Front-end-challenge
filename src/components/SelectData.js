@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
+import Contain from './Contain';
+import Period from './Period';
 import '../App.css';
 
 export default function SelectData() {
 
-       const options  = [
+    const [isClicked, setIsClicked] = useState(false);
+    const [isPeriod, setIsPeriod] = useState(false);
+     
+   const options  = [
      {label: 'First name', value: 1},
      {label: 'Last name', value: 2},
      {label: 'Birth day', value: 3},
@@ -19,12 +24,23 @@ export default function SelectData() {
      {label: 'Age', value: 11}
     ];
       const defaultOption = 'select data type';
+    
 
+      const clickedHandle = (options) => {
+          if( [1, 2, 6,7].includes(options.value) ){
+           setIsClicked(true);
+      }else if([3,4].includes(options.value)){
+        setIsPeriod(true);
+      }
+    }
     return (
         <div className='item-container'>
+            {isClicked && <Contain />}
+            {isPeriod && <Period />}
         <Dropdown 
         options={options} 
         value={defaultOption} 
+        onChange={clickedHandle}
          />
         </div>
     )

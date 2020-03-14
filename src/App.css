@@ -70,4 +70,18 @@
   padding: 10px 0 10px 0;
   margin-right: 1190px !important;
 }
+.contain-input-area{
+/* background: red;
+display: block; */
+}
+.contain-dropdown{
+display: inline;
+}
+.contain-input input{
+margin: 0 0 0 214px;
+}
+.contain-input-text{
+  width: 195px;
+  height: 30px;
+}
 
