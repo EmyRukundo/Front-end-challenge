@@ -22,7 +22,6 @@ function App() {
         <button className="add-group" onClick={handleItem}>
           Add group
         </button>
-        <button className="show-data">Show data</button>
       </div>
     </div>
   );

@@ -9,8 +9,6 @@ import '../App.css';
 export default function SelectData() {
 
     const [isClicked, setIsClicked] = useState('firstComp');
-    // const [isPeriod, setIsPeriod] = useState(false);
-    // const [isEqual, setIsEqual]  = useState(false);
      
    const options  = [
      {label: 'First name', value: 1},
@@ -41,19 +39,6 @@ export default function SelectData() {
         setoption(options.label)
       }
     }
-
-    // const clickedHandle = (options) => {
-    //     switch(options.value){
-    //         case 1,2,6,7:
-    //             return setIsClicked(true)
-
-    //        case 3,4,5:
-    //            return setIsPeriod(true)
-               
-    //     case 1,8,9,10,11: 
-    //     return  setIsEqual(true)
-    //     }
-    // }
 
 
     return (

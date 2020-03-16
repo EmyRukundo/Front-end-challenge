@@ -3,7 +3,7 @@ import Dropdown from 'react-dropdown';
 import '../App.css';
 
 export default function Period() {
-
+   
     const options= [
         {label: 'on', value: 1 },
         {label: 'before', value: 2},
@@ -25,6 +25,7 @@ export default function Period() {
         <div>
              <input defaultValue={currentDate} className='contain-input-text'  type='date'/>
              </div>
+             <button className='close-button'><strong>X</strong></button>
         </div>
     )
 }
