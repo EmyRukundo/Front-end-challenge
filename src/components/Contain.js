@@ -1,10 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Dropdown from 'react-dropdown';
 import '../App.css';
 
-export default function Contain() {
-     
-    const [isClosed, setIsClosed] = useState('null');
+export default function Contain({closeHandle}) {
 
     const options= [
         {label: 'contain', value: 1 },
@@ -13,9 +11,7 @@ export default function Contain() {
     ]
     const defaultOption = options[0];
 
-    const closeHandle = () => {
-        setIsClosed('close');
-    };
+
     return (
         <div className='contain-input-area'>
             <div>

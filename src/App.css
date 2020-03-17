@@ -64,8 +64,6 @@
   height: 30px;
 }
 .contain-input-area{
-/* background: red;
-display: block; */
 display: flex;
 }
 .contain-dropdown{
@@ -75,8 +73,8 @@ display: flex;
 }
 
 .contain-input-text{
-  width: 195px;
-  height: 30px;
+  width: 195px !important;
+  height: 40px !important;
 }
 .close-button{
   cursor: pointer;
@@ -85,4 +83,14 @@ display: flex;
     background: #E0E1E2 none;
     width: 38px;
 }
+.add-item-tag{
+  display: flex;
+}
+.add-item-tag button{
+margin-top: 10px !important;
+}
 
+.tag-input{
+  width: 400px !important;
+  margin: 5px 0 0  120px;
+}

@@ -6,7 +6,7 @@ import Period from './Period';
 import EqualComponent from './EqualComponent';
 import '../App.css';
 
-export default function SelectData() {
+export default function SelectData({closeHandle}) {
 
     const [isClicked, setIsClicked] = useState('firstComp');
      
@@ -41,6 +41,7 @@ export default function SelectData() {
     }
 
 
+
     return (
         <div className='item-container'>
             <div>
@@ -54,9 +55,9 @@ export default function SelectData() {
          </div>
             <div>
                 
-    { isClicked ==='contain' && <Contain className='side-inputs' key={options.values} />} 
-    { isClicked ==='period' && <Period  className='side-inputs' key={options.values} /> }
-    { isClicked ==='equal' && <EqualComponent key={options.values} />}
+    { isClicked ==='contain' && <Contain className='side-inputs' key={options.values} closeHandle={closeHandle} />} 
+    { isClicked ==='period' && <Period  className='side-inputs' key={options.values} closeHandle={closeHandle} /> }
+    { isClicked ==='equal' && <EqualComponent key={options.values} closeHandle={closeHandle} />}
             </div>
         </div>
     )
