@@ -22,22 +22,7 @@
     border-radius: 0.28571429rem;
     cursor: pointer;
 }
-.show-data{
-  cursor: pointer;
-  display: inline-block;
-  min-height: 1em;
-  vertical-align: baseline;
-  background: #E0E1E2 none;
-  color: rgba(0, 0, 0, 0.6);
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  margin: 0em 0.25em 0em 0em;
-  padding: 0.78571429em 1.5em 0.78571429em;
-  font-weight: bold;
-  line-height: 1em;
-  font-style: normal;
-  text-align: center;
-  border-radius: 0.28571429rem;
-}
+
 .add-item-container{
   margin: 0;
   padding: 0;
@@ -79,8 +64,6 @@
   height: 30px;
 }
 .contain-input-area{
-/* background: red;
-display: block; */
 display: flex;
 }
 .contain-dropdown{
@@ -90,7 +73,24 @@ display: flex;
 }
 
 .contain-input-text{
-  width: 195px;
-  height: 30px;
+  width: 195px !important;
+  height: 40px !important;
+}
+.close-button{
+  cursor: pointer;
+    border-radius: 0.28571429rem;
+    margin-left: 5px;
+    background: #E0E1E2 none;
+    width: 38px;
+}
+.add-item-tag{
+  display: flex;
+}
+.add-item-tag button{
+margin-top: 10px !important;
 }
 
+.tag-input{
+  width: 400px !important;
+  margin: 5px 0 0  120px;
+}

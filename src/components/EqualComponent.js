@@ -11,14 +11,17 @@ export default function EqualComponent() {
         {label: 'between', value: 4}
     ]
     const defaultOption = options[0];
+
+
     return (
         <div className='contain-input-area'>
             <div>
             <Dropdown options={options} value={defaultOption}   className='contain-dropdown' />
             </div>
             <div>
-             <input type='text' className='contain-input-text' />
+             <input type='number' className='contain-input-text' />
              </div>
+             <button className='close-button'><strong>X</strong></button>
         </div>
     )
 }

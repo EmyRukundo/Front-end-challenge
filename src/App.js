@@ -17,12 +17,10 @@ function App() {
         .map(index => {
           return <AddItem key={index} />;
         })}
-
       <div className="primary-buttons">
         <button className="add-group" onClick={handleItem}>
           Add group
         </button>
-        <button className="show-data">Show data</button>
       </div>
     </div>
   );

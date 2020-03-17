@@ -2,7 +2,7 @@ import React from 'react';
 import Dropdown from 'react-dropdown';
 import '../App.css';
 
-export default function Contain() {
+export default function Contain({closeHandle}) {
 
     const options= [
         {label: 'contain', value: 1 },
@@ -10,6 +10,8 @@ export default function Contain() {
         {label: 'not equal', value: 3}
     ]
     const defaultOption = options[0];
+
+
     return (
         <div className='contain-input-area'>
             <div>
@@ -18,6 +20,7 @@ export default function Contain() {
             <div>
              <input type='text' className='contain-input-text' />
              </div>
+             <button className='close-button' onClick={closeHandle}><strong>X</strong></button>
         </div>
     )
 }
