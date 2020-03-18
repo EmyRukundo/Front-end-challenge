@@ -31,12 +31,10 @@ export default function AddItem() {
                 <div>
                  <button className="add-item" onClick={handleIselect}>Add Item</button>
                  </div>
-                 {/* <div>
-                     {
+                     {/* {
                          isClosed === 'null' ? 
                  <input type="text" data-role="taginput" data-random-color="true" className='tag-input' defaultValue='add tags'></input> : ''
-                     }
-                 </div> */}
+                     } */}
                  </div>
             </div>
           
